@@ -1,0 +1,176 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 90%;
+    padding: 10px 100px;
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    z-index: 99;
+}
+
+.logo{
+    left: 6px;
+    font-size: 1.5em;
+    color: white;
+    user-select: none;
+    font-weight: 500;
+}
+
+.logo ion-icon{
+    position: absolute;
+    top: 15px;
+    left: 60px;
+}
+
+.navigation a{
+    position: relative;
+    font-size: 1.1em;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 500;
+    margin-left: 40px;
+}
+
+.navigation a:hover{
+    text-decoration: underline;
+}
+
+section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    width: 100%;
+    background: url("img.jpg")no-repeat; 
+    background-position: center;
+    background-size: cover;
+}
+
+.form-box{
+    position: relative;
+    width: 485px;
+    height: 455px;
+    background: transparent;
+    background-color: rgba(0, 0, 0, 0.5);
+    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+h2{
+    font-size: 2em;
+    color: #fff;
+    text-align: center;
+}
+
+.inputbox{
+    position: relative;
+    margin: 30px 0;
+    width: 310px;
+    border-bottom: 2px solid #fff;
+}
+
+.inputbox label{
+    position: absolute;
+    top: 50%;
+    left: 5px;
+    transform: translateY(-50%);
+    color: #fff;
+    font-size: 1em;
+    pointer-events: none;
+    transition: .5s;
+}
+
+input:focus ~ label,
+input:valid ~ label{
+    top: -5px;
+}
+
+.inputbox input{
+    width: 100%;
+    height: 50px;
+    background: transparent;
+    border: none;
+    outline: none;
+    font-size: 1em;
+    padding: 0 35px 0 5px;
+    color: #fff;
+}
+
+.inputbox ion-icon{
+    position: absolute;
+    right: 8px;
+    color: #fff;
+    font-size: 1.2em;
+    top: 20px;
+}
+
+.forget{
+    margin: -15px 0 15px;
+    font-size: 1em;
+    color: #fff;
+    display: flex;
+}
+
+.forget label{
+    margin-right: 90px;
+}
+
+.forget a{
+    color: #fff;
+    text-decoration: none;
+}
+
+.forget a:hover{
+    text-decoration: underline;
+}
+
+button {
+    background-color: white;
+    color: rgb(11, 11, 54);
+    border-radius: 15px;
+    border: none;
+    height: 35px;
+    width: 100%;
+    font-size: 14px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color .15s;
+}
+
+button:hover{
+    background-color: rgb(11, 11, 54);
+    color: white;
+}
+
+.register{
+    font-size: .9em;
+    color: #fff;
+    text-align: center;
+    margin: 25px 0 10px;
+}
+
+.register p{
+    font-size: .9em;
+    color: #fff;
+    font-weight: bold;
+}
+
+.register a{
+    font-size: .9em;
+    color: #fff;
+    text-decoration: none;
+}
+
+.register a:hover{
+    text-decoration: underline;
+}
